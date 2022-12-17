@@ -1,5 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
+
+import Interface from "./pages/UI/interface";
 
 function App() {
   return (
