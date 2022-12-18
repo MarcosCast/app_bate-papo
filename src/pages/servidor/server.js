@@ -22,3 +22,9 @@ mongoose.connect(dbUrl , (err) => {
 
 var Message = mongoose.model('Message', { name : String, message : String})
 
+app.get('/messages', (req, res) => {
+    Message.find({}, (err, messages) => {
+        res.send(messages);
+    })
+})
+
