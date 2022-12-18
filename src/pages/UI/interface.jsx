@@ -1,17 +1,17 @@
 function Interface() {
     return (
       <body>
-        <div class="container">
+        <div class="center">
         <br />
           <div class="jumbotron">
-            <h1 class="display-4">Send Message</h1>
+            <h1 class="display-4">Enviar Mensagem</h1>
             <br />
-            <input id = "name" class="form-control" placeholder="Name"/>
+            <input id = "name" class="form-control" placeholder="Nome"/>
             <br />
-            <textarea id = "message" class="form-control" placeholder="Your Message Here">
+            <textarea id = "message" class="form-control" placeholder="Sua Mensagem">
             </textarea>
             <br />
-            <button id="send" class="btn btn-success">Send</button>
+            <button id="send" class="btn btn-success">Enviar</button>
           </div>  
             <div id="messages">
             <br />
