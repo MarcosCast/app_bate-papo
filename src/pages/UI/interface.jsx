@@ -1,3 +1,5 @@
+import Servidor from '../servidor/server';
+
 function Interface() {
     return (
       <body>
@@ -17,7 +19,8 @@ function Interface() {
             <br />
             </div>
         </div>
-        <script>
+        <script> 
+           
 
         </script>
       </body>

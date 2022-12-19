@@ -36,3 +36,5 @@ app.post('/messages', (req, res) => {
          res.sendStatus(200);
     })
 })
+
+/*Procurar outra forma e recomeçar o app*/
