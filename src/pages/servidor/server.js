@@ -39,3 +39,4 @@ app.post('/messages', (req, res) => {
 
 /*Procurar outra forma e recomeçar o app*/
 /*Alternando para o modo mais simples*/
+/*Projeto simples n funcionou, recomeçar projeto*/
