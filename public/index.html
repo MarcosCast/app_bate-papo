@@ -16,51 +16,8 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <body>
-      <div class="center">
-      <br />
-        <div class="jumbotron">
-          <h1 class="display-4">Enviar Mensagem</h1>
-          <br />
-          <input id = "name" class="form-control" placeholder="Nome"/>
-          <br />
-          <textarea id = "message" class="form-control" placeholder="Sua Mensagem">
-          </textarea>
-          <br />
-          <button id="send" class="btn btn-success">Enviar</button>
-        </div>  
-          <div id="messages">
-          <br />
-          </div>
-      </div>
-      <script> 
-          $(() => {
-          $("#send").click(()=>{
-          sendMessage({
-              name: $("#name").val(), 
-              message:$("#message").val()});
-              })
-          getMessages()
-          })
-          
-      function addMessages(message){
-      $("#messages").append(`
-          <h4> ${message.name} </h4>
-          <p>  ${message.message} </p>`)
-      }
-      
-      function getMessages(){
-      $.get('http://localhost:3000/messages', (data) => {
-      data.forEach(addMessages);
-      })
-      }
-      
-      function sendMessage(message){
-      $.post('http://localhost:3000/messages', message)
-      }
-
-      </script>
-    </body>
+    
+ 
 
     
    
