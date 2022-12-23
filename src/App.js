@@ -1,16 +1,20 @@
 import React from 'react';
 import { ChatEngine } from 'react-chat-engine';
 
+import Feed from './components/Feed';
 import './App.css';
 
 const App = () => {
   return (
     <div>
       <ChatEngine
-        height='100vh'
-        projectID='60107927-3840-4f60-935a-4e4dbafc6d02'
+        projectID={process.env.REACT_APP_POJECT_ID}
         userName='admin'
-        userSecret='0123'
+        userSecret={process.env.REACT_APP_USER_SECRET}
+        //Dimensão
+        height='100vh'
+        //Feed
+        renderChatFeed={(chatProps) => <Feed {... chatProps} />}
       />
     </div>
   );
