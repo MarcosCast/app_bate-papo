@@ -19,7 +19,7 @@ const MessageForm = (props) => {
         const text_msg = event.target.value;     
         setText(text_msg);
 
-        if (text.length > 0){
+        if (text_msg.length > 0){
             setTyping(true);
         }else{
             setTyping(false)
@@ -28,7 +28,7 @@ const MessageForm = (props) => {
 
     return(
         <div>     
-            {isTyping ? <div>está digitando... </div> : <div/>}   
+            {isTyping ? <div styke={{float: 'left'}}>{props.userName} está digitando... </div> : <div/>}   
                 <form className="message-form" onSubmit={handleSubmit}>
                     <input
                     className="message-input"

@@ -15,6 +15,7 @@ const App = () => {
         height='100vh'
         //Feed
         renderChatFeed={(chatProps) => <Feed {... chatProps} />}
+        renderMessageBubble={(creds, chat, lastMessage, message, nextMessage) => {}}
       />
     </div>
   );
